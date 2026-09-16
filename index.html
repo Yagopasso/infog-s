@@ -20,7 +20,7 @@
         }
 
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #f5f7f4;
             color: #333;
         }
@@ -43,10 +43,9 @@
             display: flex;
             align-items: center;
             gap: 12px;
-
             font-size: 25px;
             font-weight: bold;
-            color: #246b45;
+            color: #1f7d78;
             letter-spacing: 1px;
         }
 
@@ -71,18 +70,18 @@
         }
 
         nav a:hover {
-            color: #246b45;
+            color: #1f7d78;
         }
 
         .contato {
-            background-color: #246b45;
+            background-color: #1f7d78;
             color: white !important;
             padding: 10px 18px;
             border-radius: 20px;
         }
 
         .contato:hover {
-            background-color: #174d31;
+            background-color: #123c40;
         }
 
 
@@ -108,7 +107,7 @@
             content: "";
             position: absolute;
             inset: 0;
-            background: rgba(0, 0, 0, 0.35);
+            background: rgba(0, 0, 0, 0.45);
         }
 
         .banner-text {
@@ -118,21 +117,30 @@
             transform: translateY(-50%);
             color: white;
             z-index: 2;
-            text-shadow: 5px 5px 5px black;
         }
 
         .banner-text h1 {
             font-size: 48px;
             margin-bottom: 10px;
-            text-shadow: 2px 2px 5px black;
             font-weight: 900;
-            text-shadow: 3px 3px 4px #333;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+        }
+
+        .banner-text h3 {
+            font-size: 14px;
+            margin-bottom: 12px;
+            font-weight: 800;
+            background-color: #f39c12;
+            border-radius: 14px;
+            padding: 6px 16px;
+            display: inline-block;
+            letter-spacing: 1px;
         }
 
         .banner-text p {
             font-size: 20px;
-            text-shadow: 1px 1px 4px black;
-            font-weight: 600;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+            line-height: 1.4;
         }
 
 
@@ -141,30 +149,23 @@
         ========================= */
 
         .container {
-            background: #174d31;
+            background: #123c40;
             width: 100%;
-            min-height: 300px;
-            margin: 50px auto;
+            min-height: 200px;
+            margin: 40px auto;
             text-align: center;
             padding: 50px 20px;
-
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            font-size: 40px;
+            font-size: 36px;
             font-weight: 700;
             color: white;
-
             box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
         }
 
         .text-decoration {
-            margin-top: 25px;
-
+            margin-top: 15px;
             font-size: 18px;
             font-weight: normal;
-
-            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-
-            color: #dff5e7;
+            color: #e6f3f1;
         }
 
 
@@ -176,41 +177,42 @@
         .informacoes2 {
             width: 90%;
             max-width: 1100px;
-            margin: 45px auto;
-            padding: 45px;
-            border-radius: 18px;
+            margin: 35px auto;
+            padding: 40px;
+            border-top-left-radius: 15px;
+            border-bottom-right-radius: 15px;
             text-align: center;
-            box-shadow: 0 10px 28px rgba(23, 77, 49, 0.12);
+            box-shadow: 0 10px 28px rgba(18, 60, 64, 0.12);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         .informacoes:hover,
         .informacoes2:hover {
             transform: translateY(-4px);
-            box-shadow: 0 15px 32px rgba(23, 77, 49, 0.16);
+            box-shadow: 0 15px 32px rgba(18, 60, 64, 0.16);
         }
 
         .informacoes {
-            background: #d2e6da;
+            background: #d8ece9;
             color: #333;
-            border: 1px solid rgba(36, 107, 69, 0.10);
+            border: 1px solid rgba(31, 125, 120, 0.10);
         }
 
         .informacoes2 {
-            background: #246b45;
+            background: #1f7d78;
             color: #ffffff;
         }
 
         .informacoes h2,
         .informacoes2 h2 {
-            font-size: clamp(26px, 3vw, 32px);
+            font-size: clamp(24px, 3vw, 30px);
             margin-bottom: 18px;
             line-height: 1.2;
             text-align: left;
         }
 
         .informacoes h2 {
-            color: #174d31;
+            color: #123c40;
         }
 
         .informacoes2 h2 {
@@ -219,46 +221,52 @@
 
         .informacoes p,
         .informacoes2 p {
-            font-size: 17px;
+            font-size: 16px;
             line-height: 1.8;
             max-width: 950px;
             text-align: left;
         }
 
         /* =========================
-           Linha separatoria 
+           LINHA SEPARATÓRIA 
         ========================= */
 
         .linha {
-            background-color: rgba(23, 77, 49, 0.9);
-            border-radius: 4px;
-            border: 3px;
-
+            width: 90%;
+            max-width: 1100px;
+            height: 4px;
+            margin: 40px auto;
+            border-radius: 10px;
+            background: linear-gradient(to right,
+                    #d8f0ee,
+                    #159a9c,
+                    #062f3a,
+                    #159a9c,
+                    #d8f0ee);
         }
 
         /* =========================
            TIMELINE - COMO FUNCIONA
         ========================= */
 
-        .timeline-titulo {
+        .titulo-secao {
+            width: 90%;
+            max-width: 1100px;
+            margin: 50px auto 40px;
             text-align: center;
-            font-size: clamp(26px, 3vw, 34px);
-            color: #174d31;
-            margin-top: 70px;
         }
 
-        .timeline-subtitulo {
-            width: 70px;
-            height: 4px;
-            background: #f39c12;
-            margin: 14px auto 50px;
-            border-radius: 2px;
+        .titulo-secao h2 {
+            margin: 20px 0;
+            font-size: 40px;
+            color: #062f3a;
+            font-weight: 800;
         }
 
         .timeline {
             position: relative;
             max-width: 1100px;
-            margin: 0 auto 70px;
+            margin: 0 auto 50px;
             padding: 0 20px;
         }
 
@@ -270,7 +278,7 @@
             top: 0;
             bottom: 0;
             width: 4px;
-            background: linear-gradient(to bottom, #f39c12, #174d31);
+            background: linear-gradient(to bottom, #f39c12, #123c40);
             transform: translateX(-50%);
             border-radius: 4px;
         }
@@ -278,7 +286,7 @@
         .etapa {
             position: relative;
             width: 50%;
-            padding: 20px 50px;
+            padding: 20px 40px;
             opacity: 0;
             transform: translateY(30px);
             animation: surgir 0.6s ease forwards;
@@ -321,12 +329,11 @@
             text-align: left;
         }
 
-        /* bolinha numerada na linha */
         .marcador {
             position: absolute;
             top: 28px;
-            width: 46px;
-            height: 46px;
+            width: 44px;
+            height: 44px;
             background: #ffffff;
             border: 4px solid #f39c12;
             border-radius: 50%;
@@ -334,34 +341,35 @@
             align-items: center;
             justify-content: center;
             font-weight: bold;
-            color: #174d31;
+            color: #123c40;
             font-size: 1.1rem;
             z-index: 2;
             transition: transform 0.3s ease, background 0.3s ease;
         }
 
         .etapa:nth-child(odd) .marcador {
-            right: -23px;
+            right: -22px;
         }
 
         .etapa:nth-child(even) .marcador {
-            left: -23px;
+            left: -22px;
         }
 
         .etapa:hover .marcador {
             transform: scale(1.15);
             background: #f39c12;
-            color: #174d31;
+            color: #123c40;
         }
 
         .cartao {
             display: inline-block;
-            background: #d2e6da;
+            background: #d8ece9;
             border-radius: 15px;
-            padding: 25px 30px;
+            padding: 22px 25px;
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
             max-width: 420px;
             transition: transform 0.35s ease, box-shadow 0.35s ease;
+            border-left: 5px solid #159a9c;
         }
 
         .etapa:hover .cartao {
@@ -371,7 +379,7 @@
 
         .cartao h3 {
             margin: 0 0 8px;
-            color: #174d31;
+            color: #123c40;
             font-size: 1.15rem;
         }
 
@@ -380,7 +388,6 @@
             font-size: 0.95rem;
             line-height: 1.5;
             color: #333;
-            max-width: none;
         }
 
         .icone {
@@ -389,106 +396,207 @@
             display: block;
         }
 
-        @media (max-width: 768px) {
-            .timeline::before {
-                left: 20px;
-            }
+        /* =========================
+           PROJETO 3D & IFRAME (CORRIGIDO)
+        ========================= */
 
-            .etapa,
-            .etapa:nth-child(even) {
-                width: 100%;
-                left: 0;
-                padding-left: 55px;
-                padding-right: 15px;
-                text-align: left !important;
-            }
+        .cbcr {
+            background-color: #123c40;
+            width: 90%;
+            max-width: 1100px;
+            margin: 40px auto 0 auto;
+            padding: 15px 20px;
+            border-radius: 12px 12px 0 0;
+            text-align: center;
+            box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.05);
+        }
 
-            .etapa:nth-child(odd) .marcador,
-            .etapa:nth-child(even) .marcador {
-                left: -3px;
-                right: auto;
-            }
+        .cbcr h2 {
+            font-size: 28px;
+            font-weight: 700;
+            color: #ffffff;
+            letter-spacing: 1px;
+        }
 
-            .cartao {
-                max-width: 100%;
-            }
+        .ifrb {
+            width: 90%;
+            max-width: 1100px;
+            margin: 0 auto 50px auto;
+            padding: 30px;
+            background: linear-gradient(135deg, #159a9c 0%, #062f3a 100%);
+            border-radius: 0 0 20px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .ifrb iframe {
+            border: none;
+            border-top-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            width: 100%;
+            height: 500px;
+            background: #fff;
         }
 
         /* =========================
-            Semi rodapé 
+           CARDS INFORMATIVOS
         ========================= */
 
         .cards-container {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 15px;
+            gap: 20px;
             max-width: 1100px;
-            margin: 20px auto;
+            margin: 30px auto;
             padding: 0 20px;
         }
 
         .cards {
-            background-color: rgba(23, 77, 49, 0.12);
-            width: 100%;
-            border-radius: 5px;
-            height: auto;
+            background-color: #ffffff;
+            border-radius: 10px;
             text-align: left;
-            box-shadow: 3px 3px 2px #333;
-            margin: 5px auto;
-            padding: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+            padding: 22px;
+            border-top: 5px solid #159a9c;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         .cards:hover {
-            transform: translateY(-4px);
-            box-shadow: 5px 5px 8px #333;
+            transform: translateY(-50px);
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
         }
 
-        .cards h2 {
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            font-size: 20px;
+        .cards h3 {
+            font-size: 22px;
             font-weight: 700;
-            color: #174d31;
+            color: #123c40;
+            margin-bottom: 10px;
         }
 
         .cards p {
+            font-size: 25px;
+            color: #555;
+            line-height: 1.5;
+        }
+
+        details {
+            margin-top: 14px;
+        }
+
+        summary {
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 13px;
+            color: #123c40;
+            list-style: none;
+
+            display: inline-block;
+            margin-top: 14px;
+            padding: 6px 14px;
+            border: 2px solid #159a9c;
+            border-radius: 20px;
+            transition: 0.25s;
+        }
+
+        summary::-webkit-details-marker {
+            display: none;
+            /* remove a setinha padrão no Chrome/Safari */
+        }
+
+        summary::before {
+            content: "▸ ";
+            color: inherit;
+            transition: transform 0.2s ease;
+            display: inline-block;
+        }
+
+        summary:hover {
+            background: #159a9c;
+            color: white;
+        }
+
+        details[open] summary {
+            background: #159a9c;
+            color: white;
+        }
+
+        details[open] summary::before {
+            transform: rotate(90deg);
+        }
+
+        details p {
+            margin-top: 8px;
+            font-size: 14px;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .faq {
+            background-color: #ffffff;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+            border-top-left-radius: 25px;
+            border-bottom-right-radius: 25px;
+            width: 75%;
+            margin: 15px auto;
+            height: auto;
+        }
+
+        .faq h1 {
+            text-align: center;
+            font-size: 25px;
+            color: #123c40;
+        }
+
+        .faq p {
+            text-align: 10px left;
             font-size: 15px;
-            color: #333;
-
+            color: #365b5f;
+            margin-left: 25px;
         }
 
-        @media (max-width: 768px) {
-            .cards-container {
-                grid-template-columns: 1fr;
-            }
+        .faq summary {
+            font-size: 15px;
+            margin-left: 15px;
+            border: none;
         }
+
+
+        .traço {
+            margin: 15px auto;
+            width: 95%;
+            height: 1px;
+            background-color: #333;
+        }
+
 
         /* =========================
            RODAPÉ
         ========================= */
 
         footer {
-            background-color: #174d31;
+            background-color: #123c40;
             color: white;
-
             text-align: center;
-
-            padding: 25px;
-            margin-top: 70px;
-
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding: 30px 20px;
+            margin-top: 60px;
             font-size: 14px;
             line-height: 1.8;
-
-            border-top: 3px solid #f39c12;
-
-            box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.15);
+            border-top: 4px solid #f39c12;
         }
 
 
         /* =========================
            RESPONSIVIDADE
         ========================= */
+
+        @media (max-width: 900px) {
+            .cards-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
 
         @media (max-width: 768px) {
 
@@ -514,15 +622,46 @@
             }
 
             .banner-text h1 {
-                font-size: 34px;
+                font-size: 32px;
             }
 
             .banner-text p {
-                font-size: 17px;
+                font-size: 16px;
             }
 
             .container {
-                font-size: 30px;
+                font-size: 26px;
+            }
+
+            .timeline::before {
+                left: 20px;
+            }
+
+            .etapa,
+            .etapa:nth-child(even) {
+                width: 100%;
+                left: 0;
+                padding-left: 55px;
+                padding-right: 15px;
+                text-align: left !important;
+            }
+
+            .etapa:nth-child(odd) .marcador,
+            .etapa:nth-child(even) .marcador {
+                left: -2px;
+                right: auto;
+            }
+
+            .cartao {
+                max-width: 100%;
+            }
+
+            .ifrb iframe {
+                height: 350px;
+            }
+
+            .cards-container {
+                grid-template-columns: 1fr;
             }
         }
     </style>
@@ -531,98 +670,49 @@
 
 <body>
 
-    <!-- =========================
-         CABEÇALHO
-    ========================== -->
-
+    <!-- CABEÇALHO -->
     <header>
-
         <div class="logo">
-
             <img src="imgs/biogas.JPEG" alt="Logo Biogás">
-
             <span>INFOGÁS.</span>
-
         </div>
 
-
         <nav>
-
             <a href="index.html">Início</a>
-
             <a href="calculadora.html">Calculadora</a>
-
             <a href="sustentabilidade.html">Sustentabilidade</a>
-
-            <a href="contato.html" class="contato">
-                Contato
-            </a>
-
+            <a href="contato.html" class="contato">Contato</a>
         </nav>
-
     </header>
 
 
-    <!-- =========================
-         BANNER
-    ========================== -->
-
+    <!-- BANNER -->
     <section class="banner">
-
-        <!--
-            Coloque aqui a imagem principal do site.
-
-            Exemplo:
-            imgs/biogas.JPEG
-        -->
-
         <img src="imgs/caminho biogas.png" alt="Representação de uma planta de produção de biogás">
-
         <div class="banner-text">
-
-            <h1>
-                Energia que vem da natureza
-            </h1>
-
+            <h3>ENERGIA . SUSTENTABILIDADE . INOVAÇÃO</h3>
+            <h1>Energia que vem da natureza</h1>
             <p>
-                Conheça o potencial dos biogases.
+                Conheça o potencial dos biogases e descubra como resíduos <br>
+                orgânicos podem se transformar em energia e sustentabilidade.
             </p>
-
         </div>
-
     </section>
 
 
-    <!-- =========================
-         CONTEÚDO PRINCIPAL
-    ========================== -->
-
+    <!-- CONTEÚDO PRINCIPAL -->
     <main>
 
         <section class="container">
-
-            <div>
-                Biogás: energia para um futuro sustentável
-            </div>
-
+            <div>Biogás: energia para um futuro sustentável</div>
             <div class="text-decoration">
-
-                Transformando resíduos orgânicos em energia,
-                sustentabilidade e novas possibilidades.
-
+                Transformando resíduos orgânicos em energia, sustentabilidade e novas possibilidades.
             </div>
-
         </section>
 
-
-        <!-- informatica -->
-
+        <!-- INFORMAÇÕES -->
         <section class="informacoes">
-
-            <h2>
-                O que é o nosso projeto?
-            </h2>
-
+            <h2>O que é o nosso projeto?</h2>
             <p>
                 Em nosso projeto, abordamos a produção de biogás como uma alternativa sustentável para o aproveitamento
                 de resíduos orgânicos, a partir da observação de um problema presente em nosso ambiente escolar: o
@@ -631,14 +721,10 @@
                 pergunta-problema: como podemos transformar resíduos orgânicos produzidos nas escolas em uma fonte de
                 energia renovável e, assim, contribuir para a redução do desperdício e dos impactos ambientais?
             </p>
-
         </section>
+
         <section class="informacoes2">
-
-            <h2>
-                Nossas propostas com o projeto.
-            </h2>
-
+            <h2>Nossas propostas com o projeto.</h2>
             <p>
                 Nosso objetivo geral é desenvolver uma proposta de sistema de produção de biogás que possa futuramente
                 ser implementada em escolas da rede ETEC, demonstrando seu funcionamento por meio de uma maquete
@@ -648,23 +734,19 @@
                 energia e analisar como a implantação desse sistema poderia contribuir para uma gestão mais sustentável
                 dos resíduos nas unidades escolares.
             </p>
-
         </section>
 
-        <div class="linha">
-            <p> .
+        <div class="linha"></div>
+
+
+        <!-- TIMELINE - COMO FUNCIONA -->
+        <div class="titulo-secao">
+            <div class="linha"></div>
+            <h2>Como funciona?</h2>
+            <div class="linha"></div>
         </div>
 
-
-        <!-- =========================
-             TIMELINE - COMO FUNCIONA
-        ========================== -->
-
-        <h2 class="timeline-titulo">Como funciona?</h2>
-        <div class="timeline-subtitulo"></div>
-
         <div class="timeline">
-
             <div class="etapa">
                 <div class="marcador">1</div>
                 <div class="cartao">
@@ -710,73 +792,179 @@
                     <p>O processo reduz o desperdício e os impactos ambientais causados pelo descarte incorreto.</p>
                 </div>
             </div>
-
         </div>
 
     </main>
 
-
-
-
-    <!-- =========================
-        Semi rodapé 
-    ========================== -->
-
-
-    <div class="linha">
-        <p> .
+    <!-- PROJETO 3D -->
+    <div class="cbcr">
+        <h2>Projeto em 3D!</h2>
     </div>
 
+    <section class="ifrb">
+        <iframe src="https://3d.energyencyclopedia.com/biogas" title="Modelo 3D do Biogás"></iframe>
+    </section>
+
+    <div class="linha"></div>
+
+    <!-- CARDS INFORMATIVOS -->
     <div class="cards-container">
-
         <div class="cards">
-            <h2> 🌎 Meio ambiente 🌎 </h2>
-            <p> A valorização dos resíduos orgânicos pode fazer parte de estratégias para uma gestão mais consciente dos
-                resíduos. </p>
+            <h3>🌎 Meio ambiente</h3>
+            <p>A valorização dos resíduos orgânicos pode fazer parte de estratégias para uma gestão mais consciente dos
+                resíduos.</p>
+
+            <details>
+                <summary>Saiba mais</summary>
+                <p> A valorização dos resíduos orgânicos, como restos de comida e materiais biodegradáveis, pode fazer
+                    parte de uma gestão mais consciente dos resíduos ao transformá-los em biogás por meio da digestão
+                    anaeróbia. Nesse processo, microrganismos decompõem a matéria orgânica sem oxigênio, gerando um gás
+                    rico em metano que serve como energia renovável, além de produzir um biofertilizante. Assim,
+                    reduz-se o volume de lixo nos aterros, diminuem-se as emissões de gases de efeito estufa e fecha-se
+                    o ciclo de forma sustentável, alinhada à economia circular. </p>
+            </details>
         </div>
 
         <div class="cards">
-            <h2> ⚡ Energia ⚡ </h2>
-            <p>
-                O biogás demonstra como processos biológicos podem gerar uma fonte energética que pode ser aproveitada
-                em sistemas apropriados. </p>
+            <h3>⚡ Energia</h3>
+            <p>O biogás demonstra como processos biológicos podem gerar uma fonte energética que pode ser aproveitada em
+                sistemas apropriados.</p>
+
+            <details>
+                <summary>Saiba mais</summary>
+                <p>O biogás demonstra como processos biológicos podem gerar uma fonte energética que pode ser
+                    aproveitada em sistemas apropriados. Através da digestão anaeróbia, bactérias decompõem resíduos
+                    orgânicos na ausência de oxigênio e liberam um gás composto principalmente por metano e dióxido de
+                    carbono. Esse gás pode ser capturado e utilizado em geradores para produzir eletricidade, em
+                    caldeiras para gerar calor ou até ser purificado e convertido em biometano, adequado para uso
+                    veicular ou injeção na rede de gás natural. Dessa forma, o biogás transforma um processo natural de
+                    decomposição em uma solução prática e renovável de energia, mostrando o potencial dos sistemas
+                    biológicos quando bem aproveitados.</p>
+            </details>
         </div>
 
         <div class="cards">
-            <h2> 🧑‍🏫 Educação 🧑‍🏫 </h2>
-            <p> A feira transforma conteúdos de ciência e sustentabilidade em uma experiência de aprendizagem. </p>
+            <h3>🧑‍🏫 Educação</h3>
+            <p>A feira transforma conteúdos de ciência e sustentabilidade em uma experiência de aprendizagem.</p>
+
+            <details>
+                <summary>Saiba mais</summary>
+                <p> A feira transforma conteúdos de ciência e sustentabilidade em uma experiência de aprendizagem. Ao
+                    apresentar o tema do biogás de forma interativa e acessível, o evento permite que alunos e
+                    visitantes compreendam na prática como resíduos orgânicos podem ser convertidos em energia
+                    renovável. Por meio de maquetes, demonstrações, explicações e materiais visuais, conceitos como
+                    digestão anaeróbia, economia circular e redução de impactos ambientais deixam de ser apenas teóricos
+                    e passam a fazer sentido no cotidiano. Assim, a feira cultural se torna um espaço de descoberta,
+                    diálogo e conscientização, unindo conhecimento científico e responsabilidade ambiental de maneira
+                    envolvente e educativa. </p>
+            </details>
+
         </div>
 
         <div class="cards">
-            <h2> ♻️ Economia circular ♻️ </h2>
-            <p> A proposta incentiva a reflexão sobre maneiras de aproveitar materiais e reduzir desperdícios. </p>
+            <h3>♻️ Economia circular</h3>
+            <p> A proposta incentiva a reflexão sobre maneiras de aproveitar materiais e reduzir desperdícios.</p>
+
+            <details>
+                <summary>Saiba mais</summary>
+                <p> A proposta incentiva a reflexão sobre maneiras de aproveitar materiais e reduzir desperdícios. Ao
+                    mostrar como resíduos orgânicos podem ser transformados em biogás e biofertilizante, o projeto
+                    convida alunos e visitantes a repensar o que normalmente é descartado como lixo. Essa abordagem
+                    estimula a consciência sobre o valor dos materiais, a importância de separar corretamente os
+                    resíduos e a possibilidade de aplicar soluções sustentáveis no dia a dia da escola e da comunidade.
+                    Dessa forma, a proposta não apenas informa, mas também provoca uma mudança de atitude em relação ao
+                    consumo e ao descarte, reforçando a ideia de que é possível reduzir desperdícios e gerar benefícios
+                    ambientais a partir de práticas simples e acessíveis. </p>
+            </details>
+
         </div>
 
         <div class="cards">
-            <h2> 🤝 Trabalho 🤝 </h2>
-            <p> A empresa fictícia apresenta a intermediação como uma forma de aproximar profissionais e oportunidades.
-            </p>
+            <h3>🤝 Trabalho</h3>
+            <p>A empresa apresenta a intermediação como uma forma de aproximar biodegradáveis e oportunidades.</p>
+            <details>
+                <summary>Saiba mais</summary>
+                <p> A empresa apresenta a intermediação como uma forma de aproximar resíduos biodegradáveis de
+                    oportunidades reais de aproveitamento, conectando quem gera o material a soluções que o transformam
+                    em biogás ou outros recursos úteis.</p>
+            </details>
+
         </div>
 
         <div class="cards">
-            <h2> 💡 Inovação 💡 </h2>
-            <p> A união de tecnologia, cultura e trabalho cria espaço para pensar em novas soluções. </p>
-        </div>
+            <h3>💡 Inovação</h3>
+            <p>A união de tecnologia, cultura e trabalho cria espaço para pensar em novas soluções.</p>
 
+            <details>
+                <summary>Saiba mais</summary>
+                <p>novação: A união de tecnologia, cultura e trabalho cria espaço para pensar em novas soluções. No
+                    contexto da feira, a combinação entre o conhecimento científico sobre biogás, a expressão cultural
+                    do evento e o esforço coletivo dos alunos permite enxergar os resíduos orgânicos de forma diferente.
+                    Em vez de serem tratados apenas como lixo, esses materiais passam a ser vistos como matéria-prima
+                    para gerar energia renovável e fertilizantes. Essa integração estimula a criatividade, o pensamento
+                    crítico e a busca por alternativas práticas e sustentáveis, mostrando que inovação também nasce
+                    quando ciência, cultura e ação se encontram em um mesmo espaço de aprendizagem.</p>
+            </details>
+
+        </div>
     </div>
 
-    <!-- =========================
-         RODAPÉ
-    ========================== -->
+    <section class="faq">
+        <h1> Perguntas frequentes (FAQ) </h1>
+        <details>
+            <summary> Quanto tempo demora para materia organica gerar gás? </summary>
+            <p> Em média, o processo de digestão anaeróbica completo leva de 15 a 30 dias para ser concluído, mas esse
+                período pode variar significativamente de acordo com as condições do sistema. A temperatura ambiente
+                desempenha um papel fundamental, pois as bactérias responsáveis pela decomposição atuam de forma muito
+                mais rápida em climas quentes do que em dias frios. Além disso, a composição dos resíduos e o seu
+                tamanho influenciam diretamente no tempo de processamento, já que alimentos picados e de fácil
+                degradação, como frutas e vegetais, são metabolizados mais rapidamente do que materiais fibrosos. Ao
+                longo de todo esse ciclo, a matéria orgânica passa por etapas microbiológicas graduais até se
+                transformar completamente em gás metano e em um biofertilizante rico em nutrientes.
+            </p>
+        </details>
 
+        <div class="traço">
+            <p> </p>
+        </div>
+
+        <details>
+            <summary> Qualquer tipo de alimento pode ir para o biodigestor? </summary>
+            <p> A maioria dos resíduos orgânicos diários, como restos de frutas, legumes, cascas e grãos cozidos, é
+                ideal para o sistema por ser de rápida decomposição. No entanto, deve-se evitar o excesso de óleos,
+                gorduras, carnes e laticínios, pois eles retardam o processo e podem gerar odores indesejados. Além
+                disso, produtos químicos e detergentes jamais devem ser inseridos, pois alteram o pH interno e matam as
+                bactérias responsáveis por produzir o biogás.
+            </p>
+        </details>
+
+        <div class="traço">
+            <p> </p>
+        </div>
+
+        <details>
+            <summary> O sistema libera mau cheiro no ambiente escolar? </summary>
+            <p> Não, o biodigestor não exala nenhum tipo de mau cheiro no ambiente escolar. Todo o processo de
+                decomposição ocorre dentro de um reservatório hermeticamente vedado, ou seja, completamente selado
+                contra a entrada e saída de ar. Como o biogás é uma fonte preciosa de energia, o sistema é projetado
+                para canalizar 100% dos gases gerados diretamente para os tubos de armazenamento e uso, sem qualquer
+                tipo de vazamento. O único momento em que há manuseio de resíduos é durante o abastecimento, mas esse
+                procedimento é rápido e segue boas práticas de limpeza, garantindo um ambiente totalmente limpo, seguro
+                e agradável para alunos e professores.
+            </p>
+        </details>
+
+        <div class="traço">
+            <p> </p>
+        </div> <br>
+    </section>
+
+
+    <!-- RODAPÉ -->
     <footer>
-
         © 2026 - Projeto Biogases | Feira Cultural ETEC
-
         <br>
-
         Desenvolvido pelos alunos do 1º Informática
-
     </footer>
 
 </body>
